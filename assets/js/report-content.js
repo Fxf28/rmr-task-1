@@ -6,7 +6,7 @@
 class ReportContent {
   constructor() {
     // order of fragments (charts-container should be first so canvases exist)
-    this.sections = ["report/charts-container", "report/executive-summary", "report/methodology", "report/platform-analysis", "report/demographics", "report/behavior", "report/insights", "report/footnotes"];
+    this.sections = ["report/charts-container", "report/executive-summary", "report/methodology", "report/platform-analysis", "report/demographics", "report/behavior", "report/business-market", "report/insights", "report/footnotes"];
     this.basePath = "components"; // folder where components live
     this.initialized = false;
   }
