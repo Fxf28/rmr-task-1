@@ -3,135 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solo Youth Insights</title>
+    <title>Solo Raya Market Intelligence — Insight Pasar & Konsumen 2026</title>
+    <meta
+      name="description"
+      content="Laporan intelijen pasar Solo Raya: demografi, perilaku konsumen lintas generasi, ekonomi, dan peluang bisnis di 7 kabupaten/kota (Surakarta, Boyolali, Sukoharjo, Karanganyar, Wonogiri, Sragen, Klaten)."
+    />
 
-    <!-- Favicon Configuration -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#292F36" />
-    <meta name="msapplication-TileImage" content="assets/favicon/android-chrome-192x192.png" />
-    <meta name="theme-color" content="#292F36" />
-    <meta name="apple-mobile-web-app-title" content="Solo Youth Insights" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#0b1120" />
 
-    <!-- External Libraries -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/charts.css" />
-
-    <!-- Markdown Renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
-
-    <!-- Tailwind Configuration -->
-    <script src="assets/js/config.js"></script>
+    <!-- Styles (Tailwind v4 + design system) -->
+    <link rel="stylesheet" href="/src/css/main.css" />
   </head>
-  <body class="bg-solo-light text-solo-dark font-sans min-h-screen flex flex-col">
-    <!-- Header Section -->
+  <body>
+    <script>document.documentElement.classList.add("js");</script>
+
+    <!-- Skip link (accessibility) -->
+    <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
+    <!-- Header / Navigation -->
     <div id="header-container"></div>
 
-    <!-- Hero Stats Section -->
-    <div id="hero-stats-container"></div>
+    <!-- Main Report Content -->
+    <main id="main-content" class="section py-10 md:py-16">
+      <div class="space-y-14 md:space-y-20">
+        <!-- 01 · Executive Summary -->
+        <div id="exec-summary-container"></div>
 
-    <!-- Main Content -->
-    <main class="flex-1 max-w-6xl mx-auto px-4 py-8 md:py-12 w-full">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-        <!-- Psychographic Profile -->
-        <div id="psychographic-container" class="lg:col-span-2"></div>
+        <!-- 02 · Demografi Solo Raya -->
+        <div id="demographics-container"></div>
 
-        <!-- Digital Landscape -->
-        <div id="digital-landscape-container"></div>
+        <!-- 03 · Consumer Insights -->
+        <div id="personas-container"></div>
 
-        <!-- Viral Topics -->
-        <div id="viral-topics-container"></div>
+        <!-- 04 · Digital Behaviour -->
+        <div id="digital-behavior-container"></div>
 
-        <!-- Hangout Culture -->
-        <div id="hangout-culture-container" class="lg:col-span-2"></div>
+        <!-- 05 · Lifestyle -->
+        <div id="lifestyle-container"></div>
 
-        <!-- Education & Learning -->
-        <div id="education-container" class="lg:col-span-2"></div>
+        <!-- 06 · Education -->
+        <div id="education-container"></div>
 
-        <!-- Business Opportunities -->
-        <div id="business-opportunities-container" class="lg:col-span-2"></div>
+        <!-- 07 · Business Opportunities -->
+        <div id="business-container"></div>
 
-        <!-- AI Strategy Generator -->
-        <!-- <div id="ai-strategy-container" class="lg:col-span-2"></div> -->
+        <!-- 08 · Study Abroad -->
+        <div id="study-abroad-container"></div>
 
-        <!-- Marketing Strategy -->
-        <div id="marketing-strategy-container" class="lg:col-span-2"></div>
+        <!-- 09 · Marketing Strategy -->
+        <div id="marketing-container"></div>
 
-        <!-- Data Sources -->
-        <div id="data-sources-container" class="lg:col-span-2"></div>
+        <!-- 10 · Data Sources -->
+        <div id="data-sources-container"></div>
       </div>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <div id="footer-container"></div>
 
-    <!-- JavaScript Files -->
-    <script src="assets/js/charts.js"></script>
-    <script src="assets/js/gemini-config.js"></script>
-    <script src="assets/js/gemini.js"></script>
-
-    <!-- Component Loader -->
-    <script>
-      // Function to load components
-      async function loadComponent(componentName, targetId) {
-        try {
-          const response = await fetch(`components/${componentName}.html`);
-          const html = await response.text();
-          document.getElementById(targetId).innerHTML = html;
-        } catch (error) {
-          console.error(`Error loading ${componentName}:`, error);
-          // Fallback: Load from backup location or show error message
-          if (componentName === "header") {
-            document.getElementById(targetId).innerHTML = '<div class="bg-solo-dark text-white p-8 text-center">Error loading header</div>';
-          }
-        }
-      }
-
-      // Load all components when page loads
-      document.addEventListener("DOMContentLoaded", function () {
-        const components = [
-          { file: "header", target: "header-container" },
-          { file: "hero-stats", target: "hero-stats-container" },
-          { file: "psychographic-profile", target: "psychographic-container" },
-          { file: "digital-landscape", target: "digital-landscape-container" },
-          { file: "viral-topics", target: "viral-topics-container" },
-          { file: "hangout-culture", target: "hangout-culture-container" },
-          { file: "education-learning", target: "education-container" },
-          { file: "business-opportunities", target: "business-opportunities-container" },
-          // { file: "ai-strategy", target: "ai-strategy-container" },
-          { file: "marketing-strategy", target: "marketing-strategy-container" },
-          { file: "data-sources", target: "data-sources-container" },
-          { file: "footer", target: "footer-container" },
-        ];
-
-        // Load each component
-        components.forEach((comp) => {
-          loadComponent(comp.file, comp.target);
-        });
-
-        // Initialize charts after components are loaded
-        setTimeout(() => {
-          if (typeof initializeCharts === "function") {
-            initializeCharts();
-          }
-
-          // Initialize AI functions
-          if (typeof initializeAIFunctions === "function") {
-            initializeAIFunctions();
-          }
-        }, 500);
-      });
-    </script>
+    <!-- JavaScript -->
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

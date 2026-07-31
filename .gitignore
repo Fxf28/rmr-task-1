@@ -1,5 +1,6 @@
-# API Config files
-assets/js/gemini-config.js
+# Dependencies & build output
+node_modules/
+dist/
 
 # Local development files
 .env

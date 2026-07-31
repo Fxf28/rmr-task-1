@@ -1,198 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <title>Riset Study Abroad & Peluang Bisnis Solo - Solo Youth Insights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riset Study Abroad & Peluang Bisnis — Solo Raya Market Intelligence</title>
+    <meta
+      name="description"
+      content="Laporan riset study abroad Solo Raya: minat studi luar negeri, platform, negara tujuan, motivasi, segmentasi keluarga, market study, dan rekomendasi strategi."
+    />
 
-    <!-- Favicon Configuration -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#292F36" />
-    <meta name="msapplication-TileImage" content="assets/favicon/android-chrome-192x192.png" />
-    <meta name="theme-color" content="#292F36" />
+    <meta name="theme-color" content="#0b1120" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Riset peluang pasar study abroad dan bisnis di Solo, dengan segmentasi keluarga dan lintas generasi." />
-    <meta name="keywords" content="studi luar negeri, beasiswa, Solo, Surakarta, pendidikan, riset, data, TikTok, Instagram" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- External Libraries -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/report.css" />
-
-    <!-- Tailwind Configuration -->
-    <script src="assets/js/config.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/css/main.css" />
   </head>
-  <body class="bg-solo-light text-solo-dark font-sans min-h-screen">
+  <body class="min-h-screen">
+    <script>document.documentElement.classList.add("js");</script>
+
+    <!-- Skip link (accessibility) -->
+    <a href="#report-content" class="skip-link">Langsung ke konten laporan</a>
+
     <!-- Navigation -->
-    <nav class="bg-solo-dark text-white p-3 md:p-4 sticky top-0 z-50 shadow-lg">
-      <div class="max-w-6xl mx-auto flex justify-between items-center gap-2">
-        <a href="index.html" class="flex items-center gap-2 hover:bg-solo-primary/10 p-2 rounded-lg transition min-w-0">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <nav class="sticky top-0 z-50 border-b border-ink-200 bg-surface/90 backdrop-blur no-print">
+      <div class="section flex items-center justify-between gap-3 py-3">
+        <a href="index.html" class="flex items-center gap-2.5 min-w-0 group">
+          <svg class="h-5 w-5 text-ink-400 group-hover:text-ink-900 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
-          <span class="font-semibold text-sm md:text-base truncate">Kembali ke Dashboard</span>
+          <span class="font-medium text-sm text-ink-700 truncate">Kembali ke Dashboard</span>
         </a>
-        <div class="flex items-center gap-2 md:gap-3 min-w-0">
-          <div class="h-6 w-6 md:h-8 md:w-8 bg-solo-primary rounded-full flex items-center justify-center flex-shrink-0">
-            <span class="font-bold text-white text-sm md:text-base">S</span>
-          </div>
-          <span class="text-base md:text-lg font-bold truncate">Solo Youth Insights 2025</span>
+        <div class="flex items-center gap-2.5 min-w-0">
+          <span class="hidden sm:block text-xs font-semibold uppercase tracking-[0.12em] text-ink-500 truncate">
+            Study Abroad · Solo Raya
+          </span>
+          <span class="chip bg-ink-900 text-white hidden md:inline-flex">Edisi 2026</span>
         </div>
       </div>
     </nav>
 
-    <!-- Main Report Content -->
-    <main class="max-w-6xl mx-auto px-3 md:px-4 py-4 md:py-8" id="report-content">
+    <main class="section py-8 md:py-12" id="report-content">
       <!-- Progress Indicator -->
-      <div class="sticky top-16 md:top-20 z-40 bg-white/90 backdrop-blur-sm rounded-xl p-3 md:p-4 mb-6 md:mb-8 shadow-lg border border-gray-100">
-        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-          <div class="text-xs md:text-sm text-gray-600 flex items-center gap-2">
-            <span class="hidden sm:inline">Progress Membaca:</span>
-            <span class="sm:hidden">Progress:</span>
-            <span id="progress-percent" class="font-semibold">0%</span>
-          </div>
-          <div class="w-full sm:w-48 md:w-64 bg-gray-200 rounded-full h-1.5 md:h-2">
-            <div id="progress-bar" class="bg-solo-primary h-1.5 md:h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+      <div class="sticky top-16 z-40 card px-4 py-2.5 mb-6 bg-surface/90 backdrop-blur no-print" role="status" aria-live="polite">
+        <div class="flex items-center justify-between gap-4">
+          <span class="text-xs text-ink-600 flex items-center gap-2">
+            <span class="hidden sm:inline">Progress membaca</span>
+            <span id="progress-percent" class="font-semibold text-ink-900 kpi">0%</span>
+          </span>
+          <div class="flex-1 max-w-xs bg-ink-100 rounded-full h-1 overflow-hidden">
+            <div id="progress-bar" class="bg-brand-600 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
           </div>
         </div>
       </div>
 
-      <!-- Header -->
-      <section class="text-center mb-8 md:mb-16 px-2">
-        <div class="inline-block mb-4 md:mb-6 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-solo-primary to-blue-500 rounded-full">
-          <span class="text-white font-semibold text-sm md:text-base">Riset Pendidikan Internasional</span>
-        </div>
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-solo-dark mb-4 md:mb-6 leading-snug md:leading-tight">
-          <span class="bg-gradient-to-r from-solo-primary to-blue-600 bg-clip-text text-transparent block mb-2">Eksodus Akademik</span>
-          <span class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl block mb-2">Mengurai Minat Studi Luar Negeri</span>
-          <span class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-solo-gray block">Generasi Muda Surakarta</span>
+      <!-- Report Header -->
+      <section class="text-center mb-8 md:mb-10 px-2">
+        <p class="eyebrow mb-4">Laporan Riset · Desember 2025 — diperbarui Juli 2026</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-ink-900 leading-[1.1]">
+          Eksodus Akademik
         </h1>
-        <p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-6 md:mb-8 px-2">
-          Analisis komprehensif berbasis social listening terhadap perilaku, motivasi, dan tantangan pelajar Solo dalam mengejar pendidikan tinggi di luar negeri.
+        <p class="mt-3 text-lg md:text-2xl font-semibold text-ink-700">Mengurai minat studi luar negeri generasi muda Surakarta</p>
+        <p class="mt-4 max-w-2xl mx-auto text-sm md:text-base leading-relaxed text-ink-500">
+          Analisis berbasis data sekunder terverifikasi (LPDP, BPS, DataReportal) dan pengamatan
+          percakapan digital. Seluruh angka diberi sumber dan tingkat kepercayaan; bagian yang belum
+          dapat dipastikan ditandai eksplisit.
         </p>
 
-        <div class="flex flex-wrap justify-center gap-2 md:gap-4 mt-6 md:mt-8">
-          <div class="flex items-center gap-1 md:gap-2 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
-            <div class="w-2 h-2 md:w-3 md:h-3 bg-green-500 rounded-full animate-pulse"></div>
-            <span class="text-xs md:text-sm text-gray-700">Data Terbaru: Des 2025</span>
-          </div>
-          <div class="flex items-center gap-1 md:gap-2 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
-            <div class="w-2 h-2 md:w-3 md:h-3 bg-blue-500 rounded-full"></div>
-            <span class="text-xs md:text-sm text-gray-700">4 Platform Media Sosial</span>
-          </div>
-          <div class="flex items-center gap-1 md:gap-2 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
-            <div class="w-2 h-2 md:w-3 md:h-3 bg-purple-500 rounded-full"></div>
-            <span class="text-xs md:text-sm text-gray-700">1,500+ Data Point</span>
-          </div>
+        <div class="mt-7 flex flex-wrap justify-center gap-2">
+          <span class="chip bg-ink-100 text-ink-700">Data: 2025–2026</span>
+          <span class="chip bg-ink-100 text-ink-700">Cakupan: Solo Raya</span>
+          <span class="chip bg-brand-50 text-brand-700">4 platform dianalisis</span>
         </div>
       </section>
 
       <!-- Table of Contents -->
-      <section class="mb-8 md:mb-12 bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg border border-gray-100">
-        <h2 class="text-lg md:text-xl lg:text-2xl font-bold text-solo-dark mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8 text-solo-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-          </svg>
-          <span>Daftar Isi</span>
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-4">
-          <a href="#charts-container" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">0</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Visualisasi Data</span>
-            </div>
-          </a>
-          <a href="#executive-summary" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">1</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Executive Summary</span>
-            </div>
-          </a>
-          <a href="#methodology" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">2</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Metodologi & Sampel</span>
-            </div>
-          </a>
-          <a href="#platform-analysis" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">3</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Analisis Platform</span>
-            </div>
-          </a>
-          <a href="#demographics" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">4</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Demografi & Psikografi</span>
-            </div>
-          </a>
-          <a href="#behavior" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">5</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Peta Perilaku</span>
-            </div>
-          </a>
-          <a href="#business-market" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">6</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base">Market Study & Segmentasi</span>
-            </div>
-          </a>
-          <a href="#insights" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">7</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Insight Strategis</span>
-            </div>
-          </a>
-          <a href="#footnotes" class="toc-item p-3 md:p-4 border border-gray-200 rounded-lg hover:border-solo-primary hover:bg-blue-50 transition text-left">
-            <div class="flex items-center gap-2 md:gap-3">
-              <div class="w-6 h-6 md:w-8 md:h-8 bg-solo-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-solo-primary font-bold text-sm md:text-base">8</span>
-              </div>
-              <span class="font-semibold text-sm md:text-base truncate">Referensi & Catatan</span>
-            </div>
-          </a>
+      <section class="card p-4 md:p-5 mb-8" aria-label="Daftar isi">
+        <h2 class="eyebrow mb-3">Daftar Isi</h2>
+        <div class="flex flex-wrap gap-2">
+          <a href="#charts-section" class="toc-item"><span class="num">00</span> Visualisasi Data</a>
+          <a href="#executive-summary" class="toc-item"><span class="num">01</span> Executive Summary</a>
+          <a href="#methodology" class="toc-item"><span class="num">02</span> Metodologi & Sampel</a>
+          <a href="#platform-analysis" class="toc-item"><span class="num">03</span> Analisis Platform</a>
+          <a href="#demographics" class="toc-item"><span class="num">04</span> Demografi & Psikografi</a>
+          <a href="#behavior" class="toc-item"><span class="num">05</span> Peta Perilaku</a>
+          <a href="#business-market" class="toc-item"><span class="num">06</span> Market Study</a>
+          <a href="#business-opportunities" class="toc-item"><span class="num">07</span> Business Opportunities</a>
+          <a href="#insights" class="toc-item"><span class="num">08</span> Insight Strategis</a>
+          <a href="#footnotes" class="toc-item"><span class="num">09</span> Referensi & Catatan</a>
         </div>
       </section>
 
-      <!-- Chart Container -->
-      <div id="charts-container" class="mobile-scroll-container"></div>
+      <!-- Charts -->
+      <div id="charts-container" class="mb-8"></div>
 
       <!-- Report Sections -->
       <div id="report-sections" class="prose-report max-w-none"></div>
 
-      <!-- Back to Dashboard Button -->
-      <div class="text-center mt-8 md:mt-12 mb-8 md:mb-16">
-        <a
-          href="index.html"
-          class="inline-flex items-center justify-center gap-2 bg-solo-primary text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-solo-primary/90 transition-colors font-semibold text-sm md:text-base shadow-md hover:shadow-lg w-full sm:w-auto"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <!-- Back to Dashboard -->
+      <div class="text-center mt-10 mb-8">
+        <a href="index.html" class="btn btn-primary no-print">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
           Kembali ke Dashboard Utama
@@ -200,320 +120,20 @@
       </div>
     </main>
 
-    <!-- Scroll to Top Button (visible after scroll) -->
+    <!-- Scroll to Top -->
     <button
       id="scrollToTopBtn"
       type="button"
       aria-label="Kembali ke atas"
-      class="hidden fixed right-4 bottom-6 md:right-6 md:bottom-8 z-50 p-3 md:p-3 rounded-full bg-solo-primary text-white shadow-xl hover:scale-105 transform-gpu transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solo-primary/40"
+      class="hidden fixed right-4 bottom-6 md:right-6 md:bottom-8 z-50 p-3 rounded-full bg-ink-900 text-white shadow-lg hover:bg-ink-800 transition-colors no-print focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500"
     >
-      <!-- chevron-up icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
       </svg>
     </button>
 
-    <!-- JavaScript Files -->
-    <script src="assets/js/charts.js"></script>
-    <script src="assets/js/report/chart.js"></script>
-    <script src="assets/js/report-content.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const CHART_IDS = ["platform-usage-chart", "country-distribution-chart", "motivation-chart", "scholarship-interest-chart", "decision-journey-chart", "concerns-chart", "timeline-chart", "demographic-chart"];
-
-        // IDs we want to prioritize (above-the-fold)
-        const PRIORITY = new Set(["platform-usage-chart", "decision-journey-chart", "demographic-chart"]);
-
-        const chartsContainer = document.getElementById("charts-container");
-        if (!chartsContainer) return;
-
-        function ensureSkeletonOn(container, canvasId) {
-          if (!container) return;
-          // add data-chart-id attribute if missing
-          if (!container.dataset.chartId) container.dataset.chartId = canvasId || container.querySelector("canvas")?.id || "";
-
-          // set priority if it's one of the recommended IDs
-          if (PRIORITY.has(container.dataset.chartId)) container.dataset.chartPriority = "high";
-
-          // add skeleton overlay if missing
-          if (!container.querySelector(".chart-skeleton")) {
-            const sk = document.createElement("div");
-            sk.className = "chart-skeleton";
-            sk.innerHTML = `<div class="pulse" aria-hidden="true"></div><div class="label">Memuat visual…</div>`;
-            container.appendChild(sk);
-          } else {
-            // make sure visible
-            const sk = container.querySelector(".chart-skeleton");
-            sk.classList.remove("hidden");
-          }
-        }
-
-        function annotateExisting() {
-          // prefer explicit containers (elements with .chart-container inside charts-container)
-          const chartContainers = chartsContainer.querySelectorAll(".chart-container");
-          chartContainers.forEach((cont) => {
-            const canvas = cont.querySelector("canvas");
-            const canvasId = canvas?.id || cont.dataset.chartId || "";
-            if (canvasId) ensureSkeletonOn(cont, canvasId);
-          });
-
-          // also check for bare canvases (if markup is minimal)
-          CHART_IDS.forEach((id) => {
-            const canvas = chartsContainer.querySelector(`#${id}`);
-            if (canvas) {
-              const cont = canvas.closest(".chart-container") || canvas.parentElement;
-              ensureSkeletonOn(cont, id);
-            }
-          });
-        }
-
-        // If markup not yet injected, observe #charts-container for additions
-        let observer;
-        function startMutationObserver() {
-          if (observer) return;
-          observer = new MutationObserver((mutations) => {
-            annotateExisting();
-            // if we found at least one canvas, we can disconnect after some time
-            const found = chartsContainer.querySelector("canvas");
-            if (found) {
-              setTimeout(() => {
-                try {
-                  observer.disconnect();
-                } catch (e) {}
-              }, 800);
-            }
-          });
-          observer.observe(chartsContainer, { childList: true, subtree: true });
-        }
-
-        // Run initial annotate (covers the case if report-content already injected)
-        annotateExisting();
-        startMutationObserver();
-
-        // Hide skeleton when chart:ready event dispatched by report/chart.js
-        document.addEventListener("chart:ready", (e) => {
-          try {
-            const id = e?.detail?.id;
-            if (!id) return;
-            const container = document.querySelector(`[data-chart-id="${id}"]`);
-            const skeleton = container?.querySelector(".chart-skeleton");
-            if (skeleton) skeleton.classList.add("hidden");
-          } catch (err) {
-            /* noop */
-          }
-        });
-
-        // Also hide skeleton when chart instance is present in window.reportCharts (in case chart:ready not fired)
-        const tryHideFromInstances = () => {
-          const rc = window.reportCharts;
-          if (!rc || !rc.charts) return;
-          Object.keys(rc.charts).forEach((k) => {
-            const container = document.querySelector(`[data-chart-id="${k}"]`);
-            const skeleton = container?.querySelector(".chart-skeleton");
-            if (skeleton) skeleton.classList.add("hidden");
-          });
-        };
-        // small polling but limited and cheap (stop after few tries)
-        let tries = 0;
-        const poll = setInterval(() => {
-          tries++;
-          tryHideFromInstances();
-          if ((window.reportCharts && Object.keys(window.reportCharts.charts || {}).length >= 3) || tries > 10) {
-            clearInterval(poll);
-          }
-        }, 300);
-
-        // Safety fallback: remove skeletons after 6s to avoid stuck UI on very edge cases
-        setTimeout(() => {
-          document.querySelectorAll(".chart-skeleton").forEach((s) => s.classList.add("hidden"));
-          try {
-            if (observer) observer.disconnect();
-          } catch (e) {}
-        }, 6000);
-      });
-    </script>
-
-    <!-- Responsive Scripts -->
-    <script>
-      // Scroll progress indicator
-      window.addEventListener("scroll", function () {
-        const content = document.getElementById("report-content");
-        if (!content) return;
-
-        const contentHeight = content.offsetHeight;
-        const windowHeight = window.innerHeight;
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        const progress = ((scrollTop + windowHeight) / (contentHeight + windowHeight)) * 100;
-        const progressBar = document.getElementById("progress-bar");
-        const progressPercent = document.getElementById("progress-percent");
-
-        if (progressBar && progressPercent) {
-          const percent = Math.min(100, Math.max(0, progress));
-          progressBar.style.width = percent + "%";
-          progressPercent.textContent = Math.round(percent) + "%";
-        }
-      });
-
-      // Smooth scroll for table of contents
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".toc-item").forEach((item) => {
-          item.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href");
-            const targetElement = document.querySelector(targetId);
-
-            if (targetElement) {
-              const offset = window.innerWidth < 768 ? 80 : 100;
-              window.scrollTo({
-                top: targetElement.offsetTop - offset,
-                behavior: "smooth",
-              });
-            }
-          });
-        });
-
-        // Responsive table handling
-        document.querySelectorAll("table").forEach((table) => {
-          const wrapper = document.createElement("div");
-          wrapper.className = "mobile-scroll-container";
-          table.parentNode.insertBefore(wrapper, table);
-          wrapper.appendChild(table);
-        });
-      });
-
-      function applyResponsiveClasses() {
-        // Add responsive classes to headings in report content
-        document.querySelectorAll("#report-sections h2").forEach((h2) => {
-          if (!h2.classList.contains("text-responsive")) {
-            h2.className = "text-xl md:text-2xl lg:text-3xl font-bold text-solo-dark mb-4 md:mb-6 mt-6 md:mt-8 text-responsive";
-          }
-        });
-
-        document.querySelectorAll("#report-sections h3").forEach((h3) => {
-          if (!h3.classList.contains("text-responsive")) {
-            h3.className = "text-lg md:text-xl font-semibold text-solo-dark mb-3 md:mb-4 mt-4 md:mt-6 text-responsive";
-          }
-        });
-
-        document.querySelectorAll("#report-sections p").forEach((p) => {
-          if (!p.classList.contains("text-responsive")) {
-            p.classList.add("text-sm", "md:text-base", "mb-3", "md:mb-4", "text-gray-700");
-          }
-        });
-
-        document.querySelectorAll("#report-sections ul, #report-sections ol").forEach((list) => {
-          list.classList.add("pl-4", "md:pl-6", "mb-4", "md:mb-6");
-        });
-
-        document.querySelectorAll("#report-sections li").forEach((li) => {
-          li.classList.add("text-sm", "md:text-base", "mb-2", "text-gray-700");
-        });
-      }
-
-      // Load footer and report content
-      document.addEventListener("DOMContentLoaded", function () {
-        // Load report content
-        if (typeof ReportContent !== "undefined") {
-          const reportContent = new ReportContent();
-          reportContent.loadComponents();
-        } else {
-          console.log("ReportContent class not found, loading components manually");
-          // Fallback: Load essential report components
-          const components = ["report/executive-summary", "report/methodology", "report/platform-analysis", "report/demographics", "report/behavior", "report/insights", "report/footnotes"];
-
-          components.forEach((comp) => {
-            loadComponent(comp, "report-sections");
-          });
-        }
-      });
-
-      // Handle window resize
-      let resizeTimer;
-      window.addEventListener("resize", function () {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () {
-          applyResponsiveClasses();
-        }, 250);
-      });
-
-      // ---------- Scroll to Top logic ----------
-      (function () {
-        const btn = document.getElementById("scrollToTopBtn");
-        if (!btn) return;
-
-        const SHOW_AFTER = 300; // px scrolled before showing
-
-        // Respect user prefers-reduced-motion for the scroll behavior
-        const prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-        function toggleVisibility() {
-          const y = window.pageYOffset || document.documentElement.scrollTop;
-          if (y > SHOW_AFTER) {
-            btn.classList.remove("hidden");
-            btn.setAttribute("aria-hidden", "false");
-          } else {
-            btn.classList.add("hidden");
-            btn.setAttribute("aria-hidden", "true");
-          }
-        }
-
-        // smooth scroll handler
-        function scrollToTop() {
-          try {
-            window.scrollTo({ top: 0, behavior: prefersReduced ? "auto" : "smooth" });
-          } catch (err) {
-            // fallback if browser doesn't support smooth option
-            if (prefersReduced) {
-              window.scrollTo(0, 0);
-            } else {
-              // simple animated fallback
-              let current = window.pageYOffset || document.documentElement.scrollTop;
-              const step = Math.max(20, Math.floor(current / 15));
-              const timer = setInterval(() => {
-                current -= step;
-                if (current <= 0) {
-                  clearInterval(timer);
-                  window.scrollTo(0, 0);
-                } else {
-                  window.scrollTo(0, current);
-                }
-              }, 12);
-            }
-          }
-        }
-
-        // show/hide on scroll (debounced)
-        let svTimer;
-        window.addEventListener(
-          "scroll",
-          () => {
-            clearTimeout(svTimer);
-            svTimer = setTimeout(toggleVisibility, 80);
-          },
-          { passive: true }
-        );
-
-        // click
-        btn.addEventListener("click", (e) => {
-          e.preventDefault();
-          scrollToTop();
-          btn.blur();
-        });
-
-        // keyboard accessibility: Enter/Space
-        btn.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
-            e.preventDefault();
-            scrollToTop();
-          }
-        });
-
-        // init visibility
-        toggleVisibility();
-      })();
-      // ---------- end scroll to top logic ----------
-    </script>
+    <!-- JavaScript -->
+    <script type="module" src="/src/js/main.js"></script>
+    <script src="assets/js/report-skeleton.js" defer></script>
   </body>
 </html>

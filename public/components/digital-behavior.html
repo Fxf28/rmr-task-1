@@ -1,0 +1,110 @@
+<section id="digital" class="scroll-mt-24 reveal">
+  <div class="section-head">
+    <span class="index">04</span>
+    <h2>Digital Behaviour</h2>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-4 mb-4">
+    <div class="card p-6 md:p-8">
+      <h3 class="font-bold text-ink-900 mb-1">Penggunaan platform di Indonesia</h3>
+      <p class="text-sm text-ink-500 mb-6">
+        Proksi nasional untuk konteks digital Solo Raya — struktur pemakaian platform tidak tersedia per
+        kota; data ini memberi arah prioritas kanal, bukan klaim perilaku lokal.
+      </p>
+      <div class="chart-frame">
+        <div class="chart-skeleton hidden" role="status" aria-live="polite">
+          <div class="pulse"></div>
+          <div class="label">Memuat visual…</div>
+        </div>
+        <canvas id="socialMediaChart" aria-label="Pengguna platform media sosial di Indonesia (juta)"></canvas>
+      </div>
+      <p class="source-line mt-3">
+        <strong>Sumber:</strong> DataReportal Digital 2025: Indonesia (Jan 2025) — audiens iklan; angka
+        dapat berbeda dengan pengguna aktif harian. Confidence: <span class="conf-dot conf-high"></span> Tinggi
+        untuk skala nasional, <span class="conf-dot conf-low"></span> Rendah untuk ekstrapolasi lokal.
+      </p>
+    </div>
+
+    <div class="card p-6 md:p-8">
+      <h3 class="font-bold text-ink-900 mb-1">Topik yang mendominasi percakapan lokal</h3>
+      <p class="text-sm text-ink-500 mb-6">
+        Indikasi kualitatif dari observasi konten berlabel lokasi (#KulinerSolo, #SoloRaya, #UNS, #UMS) —
+        bukan pengukuran volume teraudit.
+      </p>
+      <ol class="space-y-3">
+        <li class="flex gap-4 items-start border-b border-ink-100 pb-3">
+          <span class="kpi text-brand-600 text-xl w-8">01</span>
+          <div>
+            <p class="font-semibold text-ink-900 text-sm">Kuliner &amp; hidden gem</p>
+            <p class="text-sm text-ink-600">Review warung, kafe baru, dan "porsi jumbo harga mahasiswa" adalah konten paling sering dibagikan.</p>
+          </div>
+        </li>
+        <li class="flex gap-4 items-start border-b border-ink-100 pb-3">
+          <span class="kpi text-brand-600 text-xl w-8">02</span>
+          <div>
+            <p class="font-semibold text-ink-900 text-sm">Kehidupan kampus (UNS/UMS)</p>
+            <p class="text-sm text-ink-600">Drama kampus, rekomendasi kos, info magang, dan beasiswa — audiens mahasiswa sangat aktif.</p>
+          </div>
+        </li>
+        <li class="flex gap-4 items-start border-b border-ink-100 pb-3">
+          <span class="kpi text-brand-600 text-xl w-8">03</span>
+          <div>
+            <p class="font-semibold text-ink-900 text-sm">Event &amp; hiburan</p>
+            <p class="text-sm text-ink-600">Konser, festival (Solo Batik Fashion, festival kuliner), dan aktivitas akhir pekan.</p>
+          </div>
+        </li>
+        <li class="flex gap-4 items-start">
+          <span class="kpi text-brand-600 text-xl w-8">04</span>
+          <div>
+            <p class="font-semibold text-ink-900 text-sm">"Sambat" &amp; isu harian</p>
+            <p class="text-sm text-ink-600">Keluhan cuaca, macet, dan layanan publik — konten relatable dengan engagement tinggi.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="source-line mt-4"><strong>Basis:</strong> observasi konten lokal (kualitatif). Confidence: <span class="conf-dot conf-low"></span> Rendah — perlu social listening teraudit.</p>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-3 md:gap-4">
+    <div class="callout callout-ok">
+      <h4>Kanal utama</h4>
+      <p>WhatsApp untuk komunikasi sehari-hari; TikTok &amp; Instagram untuk discovery produk dan hiburan.</p>
+    </div>
+    <div class="callout callout-brand">
+      <h4>Pola belanja</h4>
+      <p>Riset produk via pencarian media sosial + review, kemudian transaksi di marketplace/e-commerce.</p>
+    </div>
+    <div class="callout callout-warn">
+      <h4>Catatan penting</h4>
+      <p>Durasi media sosial rata-rata nasional 3 jam 8 menit/hari (188 menit — DataReportal Digital 2025: Indonesia, Jan 2025; proksi nasional) — kompetisi perhatian sangat tinggi; konten harus spesifik-lokal.</p>
+    </div>
+  </div>
+
+  <div class="research-notes" aria-label="Provenansi data bagian ini">
+    <dl class="research-notes-grid">
+      <div>
+        <dt>Data source</dt>
+        <dd>DataReportal Digital 2025: Indonesia (rilis Feb &amp; Okt 2025 — proksi nasional); observasi konten berlabel lokasi (#KulinerSolo, #SoloRaya, #UNS, #UMS)</dd>
+      </div>
+      <div>
+        <dt>Last updated</dt>
+        <dd>Juli 2026</dd>
+      </div>
+      <div>
+        <dt>Coverage</dt>
+        <dd>Indonesia (proksi, diberi label); Kota Surakarta &amp; sekitarnya (kualitatif)</dd>
+      </div>
+      <div>
+        <dt>Confidence</dt>
+        <dd><span class="conf-dot conf-high"></span> Tinggi (angka nasional) · <span class="conf-dot conf-low"></span> Rendah (topik lokal, belum teraudit)</dd>
+      </div>
+    </dl>
+    <p class="research-notes-text">
+      <strong>Research notes:</strong> ukuran platform adalah audiens iklan nasional (Meta/TikTok ads),
+      bukan pengguna aktif harian Solo Raya — belum ada angka per wilayah. Langkah berikutnya sesuai
+      RESEARCH_PLAN.md: Meta Ads Library geotarget Solo Raya dan APJII 2025 per provinsi untuk
+      menggantikan proksi ini. Topik percakapan adalah indikasi kualitatif; social listening teraudit
+      diperlukan untuk klaim volume.
+    </p>
+  </div>
+</section>
