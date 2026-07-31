@@ -2,10 +2,12 @@
 // Wiring halaman dashboard (index.html):
 //  - memuat 12 fragment komponen via shared loader (fetch paralel, cache)
 //  - reveal-on-scroll antar section (fallback polling 6 detik)
+//  - tombol kembali ke atas (dimuat bersama komponen footer)
 //  - memicu chart dashboard setelah komponen terpasang
 // Guard: hanya berjalan bila target loader (#header-container) ada di halaman.
 
 import { loadOrdered } from "./component-loader.js";
+import { initScrollToTop } from "./scroll-to-top.js";
 
 // Urutan komponen = urutan tampilan (satu container per section, aman dimuat paralel)
 const COMPONENTS = [
@@ -76,6 +78,8 @@ function initDashboard() {
 
   loadOrdered(entries).then(() => {
     initReveal();
+    // tombol scroll-to-top ada di komponen footer — baru tersedia setelah komponen dimuat
+    initScrollToTop();
     // chart dashboard (initializeCharts punya retry internal hingga canvas tersedia)
     setTimeout(() => {
       if (typeof window.initializeCharts === "function") window.initializeCharts();

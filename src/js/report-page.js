@@ -7,6 +7,7 @@
 // Guard: hanya berjalan bila target halaman (#report-content) ada.
 
 import { ReportContent } from "./report-content.js";
+import { initScrollToTop } from "./scroll-to-top.js";
 
 function initScrollProgress() {
   window.addEventListener(
@@ -38,32 +39,6 @@ function initToc() {
       }
     });
   });
-}
-
-function initScrollToTop() {
-  const btn = document.getElementById("scrollToTopBtn");
-  if (!btn) return;
-  const prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: prefersReduced ? "auto" : "smooth" });
-
-  function toggle() {
-    const y = window.pageYOffset || document.documentElement.scrollTop;
-    btn.classList.toggle("hidden", y <= 300);
-    btn.setAttribute("aria-hidden", String(y <= 300));
-  }
-  window.addEventListener("scroll", () => setTimeout(toggle, 80), { passive: true });
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    scrollToTop();
-    btn.blur();
-  });
-  btn.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      scrollToTop();
-    }
-  });
-  toggle();
 }
 
 function initReportContent() {
