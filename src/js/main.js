@@ -1,4 +1,4 @@
-// Entry module — di-load oleh index.html & study-abroad-report.html.
+// Entry module, di-load oleh index.html & study-abroad-report.html.
 // Memuat modul wiring per halaman; masing-masing punya guard sendiri,
 // sehingga bundle yang sama aman untuk kedua halaman.
 import "./charts.js"; // chart dashboard (register window.initializeCharts)

@@ -1,5 +1,5 @@
 // src/js/report/chart.js
-// ReportCharts — mobile-first, lazy-load, priority, animation tweaks, chart:ready dispatch
+// ReportCharts: mobile-first, lazy-load, priority, animation tweaks, chart:ready dispatch
 // Utilitas warna/font diambil dari chart-utils.js (sumber tunggal: token CSS design system).
 
 import Chart from "chart.js/auto";
@@ -7,7 +7,7 @@ import { readCssVar, hexToRgba, fontFamily, getBreakpoint } from "../chart-utils
 
 class ReportCharts {
   constructor({ lazyLoad = true, eager = false, animationDuration = 400 } = {}) {
-    // color tokens — read once from CSS custom properties (design system palette)
+    // color tokens, read once from CSS custom properties (design system palette)
     this.colors = {
       primary: readCssVar("--chart-1", "#4f46e5"),
       secondary: readCssVar("--chart-2", "#10b981"),
@@ -150,7 +150,7 @@ class ReportCharts {
   setupObservers() {
     // observe each registered chart id
     Object.keys(this.chartRegistry).forEach((id) => {
-      // skip jika observer (atau chart) sudah ada — cegah duplikasi pada re-init
+      // skip jika observer (atau chart) sudah ada, cegah duplikasi pada re-init
       if (this.charts[id] || this.observers[`io-${id}`]) return;
 
       // If chart already created in DOM (canvas exists and container marked priority), create directly
@@ -166,7 +166,7 @@ class ReportCharts {
       // If canvas exists, use intersection observer on canvas; else observe container if exists
       const targetEl = canvas || container;
       if (!targetEl) {
-        // nothing to observe in DOM now — skip, maybe injected later by report-content.js
+        // nothing to observe in DOM now, skip, maybe injected later by report-content.js
         return;
       }
 
@@ -669,7 +669,7 @@ class ReportCharts {
             max: 100,
             title: {
               display: true,
-              text: "Skor indikatif (0–100)",
+              text: "Skor indikatif (0-100)",
               font: { size: isMobile ? 12 : opts.fontSizes.ticks, family: fontFamily() },
               color: "#64748b",
             },

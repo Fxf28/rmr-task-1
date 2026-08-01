@@ -1,4 +1,4 @@
-# Tahap 3 — Research Plan: Penggantian Data dengan Fokus Solo Raya
+# Tahap 3: Research Plan, Penggantian Data dengan Fokus Solo Raya
 
 > Status: rencana kerja untuk eksekusi bertahap
 > Coverage: Kota Surakarta, Kab. Sukoharjo, Karanganyar, Boyolali, Klaten, Sragen, Wonogiri
@@ -31,12 +31,12 @@
 
 - **Aturan 2 sumber:** angka kunci perlu 2 sumber independen (mis. BPS kabupaten + rilis media resmi) sebelum di-label High.
 - **Confidence:**
-  - `High` — data resmi (BPS, Dapodik, PDDIKTI, SK Gubernur, LKPJ) dari 2+ sumber.
-  - `Med` — data resmi 1 sumber + interpretasi, atau data platform (Ads Library, Google Trends) yang bersifat estimasi.
-  - `Low` — indikasi kualitatif (observasi, netnografi, wawancara terbatas).
+  - `High`: data resmi (BPS, Dapodik, PDDIKTI, SK Gubernur, LKPJ) dari 2+ sumber.
+  - `Med`: data resmi 1 sumber + interpretasi, atau data platform (Ads Library, Google Trends) yang bersifat estimasi.
+  - `Low`: indikasi kualitatif (observasi, netnografi, wawancara terbatas).
 - **Coverage Area:** cantumkan wilayah yang dicakup (mis. "Surakarta saja" vs "7 wilayah").
 - **Research Log:** setiap perubahan data dicatat (komponen, angka lama → baru, sumber, tanggal, confidence).
-- **Gate review:** setiap 2–3 domain selesai, hasil dipresentasikan ke user sebelum lanjut.
+- **Gate review:** setiap 2-3 domain selesai, hasil dipresentasikan ke user sebelum lanjut.
 
 ## 4. Metodologi per Domain
 
@@ -85,7 +85,7 @@ Format umum per domain: tujuan → research questions → sumber → metode → 
 ### 4.6 Hangout Culture
 - **Tujuan:** tempat, waktu, dan nilai transaksi nongkrong.
 - **RQ:** Tipologi venue (kafe, co-working, food court, taman)? Jam ramai? Rata-rata spend per kunjungan? Ukuran grup? Aktivitas utama?
-- **Sumber:** Google Maps (listing + review + rating), Instagram/TikTok geotag (#KulinerSolo, #NgopiSolo), wawancara pengelola 10–15 venue, observasi jam ramai.
+- **Sumber:** Google Maps (listing + review + rating), Instagram/TikTok geotag (#KulinerSolo, #NgopiSolo), wawancara pengelola 10-15 venue, observasi jam ramai.
 - **Metode:** enumerasi + review mining + wawancara + observasi.
 - **Output:** tipologi venue, jam puncak, rentang harga per segmen.
 - **Target:** `Med`.
@@ -101,7 +101,7 @@ Format umum per domain: tujuan → research questions → sumber → metode → 
 ### 4.8 Marketing Trend
 - **Tujuan:** kanal, format, dan biaya pemasaran efektif di Solo Raya.
 - **RQ:** Kanal mana yang dipakai brand lokal? Format konten apa yang perform? Indikasi budget/CPM? Tren pencarian yang naik? Berapa banyak agency/digital marketer lokal?
-- **Sumber:** Meta Ads Library (jumlah & format iklan per kategori di area Solo), Google Trends (rising queries), TikTok Creative Center, wawancara 5–8 pelaku (agency, UMKM marketer, media lokal), program digitalisasi UMKM pemerintah daerah.
+- **Sumber:** Meta Ads Library (jumlah & format iklan per kategori di area Solo), Google Trends (rising queries), TikTok Creative Center, wawancara 5-8 pelaku (agency, UMKM marketer, media lokal), program digitalisasi UMKM pemerintah daerah.
 - **Metode:** desk + trend + wawancara.
 - **Output:** rekomendasi kanal per segmen, format konten, indikasi budget.
 - **Target:** `Med`/`Low`.
@@ -109,7 +109,7 @@ Format umum per domain: tujuan → research questions → sumber → metode → 
 ### 4.9 Study Abroad Opportunity
 - **Tujuan:** mempertajam riset study abroad dengan sinyal lokal.
 - **RQ:** Berapa agen edukasi & kursus bahasa (IELTS/TOEFL) di Solo Raya? Sekolah internasional/berlabel? Permintaan per jenjang & negara tujuan? Kekhawatiran orang tua?
-- **Sumber:** LPDP (sudah terverifikasi: Surakarta 21, Klaten 24, Semarang 50, Jateng 374), Google Maps (listing agen edukasi), pusat kursus bahasa, Pemkot (Beasiswa ASEAN Singapura), wawancara 3–5 agen edukasi lokal, sekolah menengah.
+- **Sumber:** LPDP (sudah terverifikasi: Surakarta 21, Klaten 24, Semarang 50, Jateng 374), Google Maps (listing agen edukasi), pusat kursus bahasa, Pemkot (Beasiswa ASEAN Singapura), wawancara 3-5 agen edukasi lokal, sekolah menengah.
 - **Metode:** desk + enumerasi + wawancara.
 - **Output:** peta lanskap layanan, pembaruan SWOT, segmen prioritas.
 - **Target:** `High` (LPDP), `Med` (lanskap).
@@ -117,7 +117,7 @@ Format umum per domain: tujuan → research questions → sumber → metode → 
 ### 4.10 Consumer Persona
 - **Tujuan:** persona berbasis bukti Solo Raya untuk 9 segmen.
 - **RQ:** Per segmen: media, spending, tempat, aktivitas, digital habits, motivasi, gatekeeper keputusan?
-- **Sumber:** sintesis domain 4.2–4.9 + netnografi (grup Facebook/WhatsApp lokal) + wawancara informan (3–5 per segmen) + observasi venue.
+- **Sumber:** sintesis domain 4.2-4.9 + netnografi (grup Facebook/WhatsApp lokal) + wawancara informan (3-5 per segmen) + observasi venue.
 - **Metode:** netnografi + wawancara semi-terstruktur + observasi.
 - **Output:** 9 kartu persona + analisis cross-persona.
 - **Target:** `Med`; naik ke `High` bila survei primer dilakukan.
@@ -126,8 +126,8 @@ Format umum per domain: tujuan → research questions → sumber → metode → 
 
 | Segmen | Fokus riset | Lokasi riset | Metode |
 |--------|-------------|--------------|--------|
-| **Anak-anak (6–12)** | Aktivitas, hiburan, makanan, edukasi, screen time | SDN/SD swasta, taman kota, event anak | Wawancara orang tua, observasi, diskusi guru |
-| **Remaja SMP (13–15)** | Media sosial, game, fashion, komunitas, nongkrong | SMP, komunitas olahraga remaja | Wawancara, netnografi TikTok/IG, observasi |
+| **Anak-anak (6-12)** | Aktivitas, hiburan, makanan, edukasi, screen time | SDN/SD swasta, taman kota, event anak | Wawancara orang tua, observasi, diskusi guru |
+| **Remaja SMP (13-15)** | Media sosial, game, fashion, komunitas, nongkrong | SMP, komunitas olahraga remaja | Wawancara, netnografi TikTok/IG, observasi |
 | **Siswa SMA laki-laki** | Tren, lifestyle, cita-cita, digital habit, belanja online | SMA negeri/swasta, komunitas game & olahraga | Wawancara, netnografi, observasi kantin/venue |
 | **Siswa SMA perempuan** | Tren, fashion, beauty, cita-cita, belanja online | SMA, komunitas, venue kecantikan | Wawancara, netnografi, observasi |
 | **Mahasiswa (laki-laki)** | Spending, nongkrong, teknologi, side hustle, AI usage | UNS (Kentingan/Jebres), UMS (Gonilan/Pabelan), kosan | Wawancara, observasi venue, netnografi kampus |
@@ -157,13 +157,13 @@ Format umum per domain: tujuan → research questions → sumber → metode → 
 - Wawancara informan (pelaku usaha, pengelola venue, agen edukasi, guru, pengurus komunitas)
 - Netnografi (grup Facebook/WhatsApp lokal, geotag)
 - Observasi venue dan pasar
-- (Opsional) Survei terbatas 300–500 responden terstratifikasi per wilayah untuk spending, media, willingness-to-pay — syarat menaikkan confidence persona ke `High`
+- (Opsional) Survei terbatas 300-500 responden terstratifikasi per wilayah untuk spending, media, willingness-to-pay, sebagai syarat menaikkan confidence persona ke `High`
 
 ## 7. Workflow Eksekusi
 
 1. Per domain: desk research → draft angka → cross-verify (2 sumber) → label confidence/coverage/last-updated → update komponen HTML → `npm run build`.
 2. Catat setiap perubahan di Research Log (komponen, lama → baru, sumber, tanggal, confidence).
-3. Gate review ke user setiap 2–3 domain.
+3. Gate review ke user setiap 2-3 domain.
 4. Aturan: bila data tidak ditemukan → tulis insight kualitatif berlabel, jangan mengarang.
 
 ## 8. Timeline
@@ -177,16 +177,16 @@ Format umum per domain: tujuan → research questions → sumber → metode → 
 
 ## 9. Antrian Eksekusi (10 Langkah Pertama)
 
-1. BPS — proyeksi penduduk 2025 per kabupaten/kota (7 rilis)
-2. BPS — SUSENAS pengeluaran per kapita 2024/2025 per kabupaten
-3. BPS — PDRB per sektor 2025 per kabupaten (7 rilis)
-4. Dapodik — jumlah siswa per jenjang per kabupaten 2025
-5. PDDIKTI — mahasiswa aktif per PT di Solo Raya 2025
-6. Meta Ads Library — estimasi audiens iklan per platform area Solo Raya
-7. Google Trends — topik kuliner/edukasi/fashion area Solo (12 bulan)
-8. APJII 2025 — penetrasi internet Jawa Tengah
-9. Google Maps — densitas venue per kategori per kabupaten
-10. Media lokal — tren ekonomi & konsumen 2025–2026 (Espos/Solopos)
+1. BPS: proyeksi penduduk 2025 per kabupaten/kota (7 rilis)
+2. BPS: SUSENAS pengeluaran per kapita 2024/2025 per kabupaten
+3. BPS: PDRB per sektor 2025 per kabupaten (7 rilis)
+4. Dapodik: jumlah siswa per jenjang per kabupaten 2025
+5. PDDIKTI: mahasiswa aktif per PT di Solo Raya 2025
+6. Meta Ads Library: estimasi audiens iklan per platform area Solo Raya
+7. Google Trends: topik kuliner/edukasi/fashion area Solo (12 bulan)
+8. APJII 2025: penetrasi internet Jawa Tengah
+9. Google Maps: densitas venue per kategori per kabupaten
+10. Media lokal: tren ekonomi & konsumen 2025-2026 (Espos/Solopos)
 
 ## 10. Definisi Selesai
 

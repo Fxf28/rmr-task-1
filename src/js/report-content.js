@@ -1,5 +1,5 @@
 // src/js/report-content.js
-// ReportContent — loads report HTML fragments into the page (laporan study-abroad).
+// ReportContent: loads report HTML fragments into the page (laporan study-abroad).
 // Menggunakan shared loader (component-loader.js): fetch paralel, insert berurutan, cache.
 // NOTE: File ini hanya mendefinisikan class. Inisialisasi dilakukan dari report-page.js (satu tempat).
 
@@ -32,7 +32,7 @@ class ReportContent {
         if (section === "report/charts-container") {
           chartsContainer.innerHTML = html;
         } else {
-          // append to report sections — keep existing content
+          // append to report sections, keep existing content
           reportSections.insertAdjacentHTML("beforeend", html);
         }
         // optional callback for progress (useful for showing loading state)
@@ -45,7 +45,7 @@ class ReportContent {
     await loadOrdered(entries);
 
     // Setelah fragment terpasang, mulai lazy-observer chart.
-    // (ReportCharts sudah dibuat di DOMContentLoaded; panggilan ini idempotent —
+    // (ReportCharts sudah dibuat di DOMContentLoaded; panggilan ini idempotent,
     // setupObservers memakai guard, jadi aman dipanggil berulang.)
     setTimeout(() => {
       if (window.reportCharts && typeof window.reportCharts.initializeAllCharts === "function") {

@@ -25,7 +25,7 @@ const COMPONENTS = [
   { file: "footer", target: "footer-container" },
 ];
 
-// Reveal-on-scroll — transformasi halus antar section.
+// Reveal-on-scroll: transformasi halus antar section.
 // Dinonaktifkan pada prefers-reduced-motion; tanpa IntersectionObserver semua langsung tampil.
 function initReveal() {
   if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -78,7 +78,7 @@ function initDashboard() {
 
   loadOrdered(entries).then(() => {
     initReveal();
-    // tombol scroll-to-top ada di komponen footer — baru tersedia setelah komponen dimuat
+    // tombol scroll-to-top ada di komponen footer, baru tersedia setelah komponen dimuat
     initScrollToTop();
     // chart dashboard (initializeCharts punya retry internal hingga canvas tersedia)
     setTimeout(() => {

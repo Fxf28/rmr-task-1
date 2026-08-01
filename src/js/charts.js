@@ -1,5 +1,5 @@
 // src/js/charts.js
-// Chart dashboard — palette tunggal dari CSS variables (src/css/main.css).
+// Chart dashboard: palette tunggal dari CSS variables (src/css/main.css).
 // Hanya chart yang benar-benar dipakai: socialMediaChart (kanal digital).
 // initializeCharts diekspos ke window untuk dipanggil dashboard.js setelah komponen dimuat.
 
@@ -45,7 +45,7 @@ const commonOptions = {
   },
 };
 
-// 1. Platform digital — DataReportal Digital 2025: Indonesia (Jan 2025), audiens iklan (juta)
+// 1. Platform digital: DataReportal Digital 2025: Indonesia (Jan 2025), audiens iklan (juta)
 function createSocialMediaChart() {
   const canvas = document.getElementById("socialMediaChart");
   if (!canvas) return;

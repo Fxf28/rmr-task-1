@@ -1,5 +1,5 @@
 /* ============================================================
-   Solo Raya Market Intelligence — Design System
+   Solo Raya Market Intelligence: Design System
    Tailwind v4 (CSS-first configuration)
 
    PETA FILE (satu-satunya file CSS; jangan buat file baru)
@@ -142,7 +142,7 @@ body {
   left: 0;
 }
 
-/* Reveal-on-scroll (smooth section transition) — aktif hanya jika JS jalan */
+/* Reveal-on-scroll (smooth section transition), aktif hanya jika JS jalan */
 .js .reveal {
   opacity: 0;
   transform: translateY(14px);
@@ -164,7 +164,7 @@ body {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-  /* Spesifisitas harus menang atas .js .reveal — jika tidak, konten tak terlihat */
+  /* Spesifisitas harus menang atas .js .reveal; jika tidak, konten tak terlihat */
   .js .reveal {
     opacity: 1;
     transform: none;
@@ -486,7 +486,7 @@ body {
     white-space: nowrap;
   }
 
-  /* Report page — article sections */
+  /* Report page: article sections */
   .report-section {
     background: var(--color-surface);
     border: 1px solid var(--color-ink-200);
@@ -517,7 +517,7 @@ body {
     line-height: 1.75;
   }
 
-  /* Chart frame — compact heights; charts fill frame (maintainAspectRatio:false) */
+  /* Chart frame: compact heights; charts fill frame (maintainAspectRatio:false) */
   /* Kontrak skeleton & ReportCharts: .chart-container wajib position:relative */
   .chart-container {
     position: relative;
@@ -579,7 +579,7 @@ body {
     }
   }
 
-  /* TOC items (report page) — compact pill strip */
+  /* TOC items (report page): compact pill strip */
   .toc-item {
     display: inline-flex;
     align-items: center;

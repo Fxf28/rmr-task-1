@@ -1,4 +1,4 @@
-// report-skeleton.js — skeleton overlay untuk chart report (lazy-loaded oleh ReportCharts)
+// report-skeleton.js: skeleton overlay untuk chart report (lazy-loaded oleh ReportCharts)
 // Dipanggil dari study-abroad-report.html; bekerja sama dengan event "chart:ready".
 
 (function () {

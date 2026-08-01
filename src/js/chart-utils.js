@@ -20,7 +20,7 @@ export function readCssVar(name, fallback = "") {
 /**
  * Konversi hex (#rrggbb) ke rgba dengan alpha.
  * @param {string} hex
- * @param {number} alpha 0–1
+ * @param {number} alpha 0-1
  * @returns {string}
  */
 export function hexToRgba(hex, alpha = 1) {
@@ -32,7 +32,7 @@ export function hexToRgba(hex, alpha = 1) {
 }
 
 /**
- * Font keluarga yang dipakai chart — baca dari design system (--font-sans).
+ * Font keluarga yang dipakai chart, baca dari design system (--font-sans).
  * @returns {string}
  */
 export function fontFamily() {

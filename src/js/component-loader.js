@@ -1,5 +1,5 @@
 // src/js/component-loader.js
-// Shared fragment loader — dipakai dashboard (index.html) & laporan (study-abroad-report.html).
+// Shared fragment loader, dipakai dashboard (index.html) & laporan (study-abroad-report.html).
 // Strategi: fetch paralel (Promise.all) + insert berurutan sesuai urutan deklarasi,
 // dengan cache in-memory agar fragment tidak dimuat ulang antar halaman/SPA.
 

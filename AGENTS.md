@@ -600,9 +600,9 @@ Website ini harus terasa seperti laporan premium yang siap dipresentasikan kepad
 
 ## Commands
 
-- `npm run dev` — jalankan server development (http://localhost:5173)
-- `npm run build` — build production ke `dist/`
-- `npm run preview` — pratinjau hasil build
+- `npm run dev`: jalankan server development (http://localhost:5173)
+- `npm run build`: build production ke `dist/`
+- `npm run preview`: pratinjau hasil build
 
 Verifikasi wajib setelah mengubah kode: `npm run build` harus sukses tanpa error.
 
@@ -610,17 +610,17 @@ Verifikasi wajib setelah mengubah kode: `npm run build` harus sukses tanpa error
 
 - **Stack:** Vite 7 + Tailwind CSS v4 (CSS-first, via `@tailwindcss/vite`) + Chart.js 4
 - **Entry module:** `src/js/main.js` (import Chart.js, `charts.js`, `report-content.js`, `report/chart.js`)
-- **Design system:** `src/css/main.css` — satu-satunya file CSS (token `--ink-*`, `--brand-*`, `--ok-*`, `--warn-*`, `--bad-*`, `--sky-*`, `--violet-*`, palette chart `--chart-1..10`). JANGAN buat file CSS baru.
+- **Design system:** `src/css/main.css`, satu-satunya file CSS (token `--ink-*`, `--brand-*`, `--ok-*`, `--warn-*`, `--bad-*`, `--sky-*`, `--violet-*`, palette chart `--chart-1..10`). JANGAN buat file CSS baru.
 - **Halaman:**
-  - `index.html` — dashboard utama, 10 section, memuat fragmen dari `public/components/*.html` via inline loader
-  - `study-abroad-report.html` — laporan study abroad, memuat fragmen dari `public/components/report/*.html` via `ReportContent` (src/js/report-content.js), chart via `ReportCharts` (src/js/report/chart.js), skeleton via `public/assets/js/report-skeleton.js`
+  - `index.html`: dashboard utama, 10 section, memuat fragmen dari `public/components/*.html` via inline loader
+  - `study-abroad-report.html`: laporan study abroad, memuat fragmen dari `public/components/report/*.html` via `ReportContent` (src/js/report-content.js), chart via `ReportCharts` (src/js/report/chart.js), skeleton via `public/assets/js/report-skeleton.js`
 - **Assets statis:** `public/` (favicon, `public/assets/js/report-skeleton.js`)
 - **Base path:** `./` (kompatibel GitHub Pages subfolder). Selalu gunakan path relatif (`components/...`, `assets/...`, `/src/...` untuk modul)
-- **Deploy:** `.github/workflows/deploy.yml` — `npm ci && npm run build`, upload `dist/`
+- **Deploy:** `.github/workflows/deploy.yml`: `npm ci && npm run build`, upload `dist/`
 
 ## Konvensi komponen
 
-- Fragmen HTML di `public/components/` — class design system (`card`, `callout callout-brand/ok/warn/bad`, `chip`, `data-table`, `bar-track`/`bar-fill`, `source-line`, `conf-dot conf-high/med/low`, `num-badge`, `platform-badge`, `btn btn-primary`, `eyebrow`, `kpi`)
+- Fragmen HTML di `public/components/`: class design system (`card`, `callout callout-brand/ok/warn/bad`, `chip`, `data-table`, `bar-track`/`bar-fill`, `source-line`, `conf-dot conf-high/med/low`, `num-badge`, `platform-badge`, `btn btn-primary`, `eyebrow`, `kpi`)
 - Setiap blok data wajib menyertakan `source-line` + confidence dot
 - DILARANG emoji di UI; gunakan SVG icon / teks
 - Tidak ada inline style tanpa alasan; tidak ada hardcoded warna (pakai token)
