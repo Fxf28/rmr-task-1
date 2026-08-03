@@ -28,46 +28,34 @@
     <!-- Styles (Tailwind v4 + design system) -->
     <link rel="stylesheet" href="/src/css/main.css" />
   </head>
-  <body>
+  <body data-report="market">
     <script>document.documentElement.classList.add("js");</script>
 
     <!-- Skip link (accessibility) -->
     <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
 
     <!-- Header / Navigation -->
-    <div id="header-container"></div>
+    <div id="header-container" class="sticky top-0 z-50 no-print"></div>
 
     <!-- Main Report Content -->
     <main id="main-content" class="section py-10 md:py-16">
       <div class="space-y-14 md:space-y-20">
-        <!-- 01 · Executive Summary -->
+        <!-- 01 · Executive Summary (hero + laporan switcher) -->
         <div id="exec-summary-container"></div>
 
         <!-- 02 · Demografi Solo Raya -->
         <div id="demographics-container"></div>
 
-        <!-- 03 · Consumer Insights -->
-        <div id="personas-container"></div>
-
-        <!-- 04 · Digital Behaviour -->
-        <div id="digital-behavior-container"></div>
-
-        <!-- 05 · Lifestyle -->
-        <div id="lifestyle-container"></div>
-
-        <!-- 06 · Education -->
-        <div id="education-container"></div>
-
-        <!-- 07 · Business Opportunities -->
+        <!-- 03 · Business Opportunities -->
         <div id="business-container"></div>
 
-        <!-- 08 · Study Abroad -->
+        <!-- 04 · Study Abroad (teaser ke laporan lengkap) -->
         <div id="study-abroad-container"></div>
 
-        <!-- 09 · Marketing Strategy -->
+        <!-- 05 · Marketing Strategy -->
         <div id="marketing-container"></div>
 
-        <!-- 10 · Data Sources -->
+        <!-- 06 · Data Sources -->
         <div id="data-sources-container"></div>
       </div>
     </main>

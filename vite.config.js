@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: "index.html",
         report: "study-abroad-report.html",
+        behaviour: "behaviour-report.html",
       },
     },
   },

@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-50 border-b border-ink-200 bg-surface/90 backdrop-blur no-print">
+<header class="border-b border-ink-200 bg-surface/90 backdrop-blur">
   <div class="section flex items-center justify-between gap-4 py-3">
     <a href="#main-content" class="flex items-center gap-2.5 min-w-0" aria-label="Solo Raya Market Intelligence">
       <svg class="h-7 w-7 flex-shrink-0 text-brand-600" viewBox="0 0 28 28" fill="none" aria-hidden="true">
@@ -13,35 +13,38 @@
 
     <nav class="hidden lg:flex items-center gap-1" aria-label="Navigasi laporan">
       <a class="nav-link" href="#demografi">Demografi</a>
-      <a class="nav-link" href="#persona">Consumer Insights</a>
-      <a class="nav-link" href="#digital">Digital</a>
       <a class="nav-link" href="#bisnis">Bisnis</a>
-      <a class="nav-link" href="#study-abroad">Study Abroad</a>
       <a class="nav-link" href="#data-sources">Sumber Data</a>
     </nav>
 
-    <details class="lg:hidden relative group">
-      <summary class="flex items-center gap-1.5 cursor-pointer list-none rounded-lg px-2.5 py-2 hover:bg-ink-100 transition-colors" aria-label="Buka menu navigasi">
-        <svg class="h-5 w-5 text-ink-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    <div class="flex items-center gap-2.5">
+      <a href="behaviour-report.html" class="btn btn-sky hidden sm:inline-flex text-xs md:text-sm">
+        Laporan Behaviour
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M18 12H6" />
         </svg>
-      </summary>
-      <div class="absolute right-0 top-full mt-2 w-56 card p-2 flex flex-col gap-0.5 shadow-lg z-50">
-        <a class="nav-link" href="#demografi">Demografi</a>
-        <a class="nav-link" href="#persona">Consumer Insights</a>
-        <a class="nav-link" href="#digital">Digital</a>
-        <a class="nav-link" href="#bisnis">Bisnis</a>
-        <a class="nav-link" href="#study-abroad">Study Abroad</a>
-        <a class="nav-link" href="#data-sources">Sumber Data</a>
-        <a href="study-abroad-report.html" class="btn btn-accent mt-1 justify-center text-sm">Laporan Study Abroad</a>
-      </div>
-    </details>
+      </a>
+      <a href="study-abroad-report.html" class="btn btn-accent hidden sm:inline-flex text-xs md:text-sm">
+        Laporan Study Abroad
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M18 12H6" />
+        </svg>
+      </a>
 
-    <a href="study-abroad-report.html" class="btn btn-accent hidden sm:inline-flex text-xs md:text-sm">
-      Laporan Study Abroad
-      <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M18 12H6" />
-      </svg>
-    </a>
+      <details class="lg:hidden relative group">
+        <summary class="flex items-center gap-1.5 cursor-pointer list-none rounded-lg px-2.5 py-2 hover:bg-ink-100 transition-colors" aria-label="Buka menu navigasi">
+          <svg class="h-5 w-5 text-ink-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </summary>
+        <div class="absolute right-0 top-full mt-2 w-56 card p-2 flex flex-col gap-0.5 shadow-lg z-50">
+          <a class="nav-link" href="#demografi">Demografi</a>
+          <a class="nav-link" href="#bisnis">Bisnis</a>
+          <a class="nav-link" href="#data-sources">Sumber Data</a>
+          <a href="behaviour-report.html" class="btn btn-sky mt-1 justify-center text-sm">Laporan Behaviour</a>
+          <a href="study-abroad-report.html" class="btn btn-accent justify-center text-sm">Laporan Study Abroad</a>
+        </div>
+      </details>
+    </div>
   </div>
 </header>

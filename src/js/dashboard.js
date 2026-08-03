@@ -10,14 +10,12 @@ import { loadOrdered } from "./component-loader.js";
 import { initScrollToTop } from "./scroll-to-top.js";
 
 // Urutan komponen = urutan tampilan (satu container per section, aman dimuat paralel)
+// Market Intelligence Report: summary, demografi, bisnis, marketing + study abroad teaser + data sources.
+// Persona, digital, lifestyle, education dipindah ke behaviour-report.html.
 const COMPONENTS = [
   { file: "header", target: "header-container" },
   { file: "exec-summary", target: "exec-summary-container" },
   { file: "demographics", target: "demographics-container" },
-  { file: "personas", target: "personas-container" },
-  { file: "digital-behavior", target: "digital-behavior-container" },
-  { file: "lifestyle", target: "lifestyle-container" },
-  { file: "education", target: "education-container" },
   { file: "business-opportunities", target: "business-container" },
   { file: "study-abroad", target: "study-abroad-container" },
   { file: "marketing-strategy", target: "marketing-container" },
