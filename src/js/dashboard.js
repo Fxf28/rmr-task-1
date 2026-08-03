@@ -16,7 +16,7 @@ const COMPONENTS = [
   { file: "header", target: "header-container" },
   { file: "exec-summary", target: "exec-summary-container" },
   { file: "demographics", target: "demographics-container" },
-  { file: "business-opportunities", target: "business-container" },
+  // { file: "business-opportunities", target: "business-container" },
   { file: "study-abroad", target: "study-abroad-container" },
   { file: "marketing-strategy", target: "marketing-container" },
   { file: "data-sources", target: "data-sources-container" },
@@ -42,7 +42,7 @@ function initReveal() {
         }
       });
     },
-    { threshold: 0.08, rootMargin: "0px 0px -5% 0px" }
+    { threshold: 0.08, rootMargin: "0px 0px -5% 0px" },
   );
   targets.forEach((el) => io.observe(el));
 }
