@@ -4,131 +4,111 @@
     <h2>Demografi &amp; Ekonomi Solo Raya</h2>
   </div>
 
-  <p class="max-w-3xl text-sm md:text-base leading-relaxed text-ink-600 mb-8">
-    Solo Raya (eks-Karesidenan Surakarta) adalah satu kawasan metropolitan yang saling terhubung oleh
-    mobilitas harian. Kota Surakarta berperan sebagai inti ekonomi, sementara kabupaten penyangga
-    menyumbang populasi dan produksi pangan. Memahami struktur ini adalah prasyarat segmentasi pasar.
-  </p>
+  <!-- Population by region (visual bars) -->
+  <h3 class="font-bold text-ink-900 mb-4">Populasi per wilayah (2023)</h3>
+  <div class="grid lg:grid-cols-2 gap-4 mb-8">
+    <div class="card p-5 md:p-6">
+      <ul class="space-y-3">
+        <li>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-ink-700">Kota Surakarta</span>
+            <span class="kpi text-ink-900">522 rb</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: 40%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-ink-700">Kab. Klaten</span>
+            <span class="kpi text-ink-900">1.303 rb</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-ink-700">Kab. Boyolali</span>
+            <span class="kpi text-ink-900">1.100 rb</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: 84%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-ink-700">Kab. Wonogiri</span>
+            <span class="kpi text-ink-900">1.051 rb</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: 80%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-ink-700">Kab. Sragen</span>
+            <span class="kpi text-ink-900">1.005 rb</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: 77%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-ink-700">Kab. Karanganyar</span>
+            <span class="kpi text-ink-900">954 rb</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: 73%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between text-sm mb-1">
+            <span class="text-ink-700">Kab. Sukoharjo</span>
+            <span class="kpi text-ink-900">916 rb</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: 70%"></div></div>
+        </li>
+      </ul>
+      <p class="source-line mt-4">BPS, proyeksi penduduk 2023 (pembulatan; verifikasi ulang publikasi "Dalam Angka"). Skala bar relatif terhadap Klaten (±1.303 rb = terbesar).</p>
+    </div>
 
-  <!-- Population table -->
-  <div class="table-wrap mb-8">
-    <table class="data-table">
-      <caption class="sr-only">Jumlah penduduk dan indikator ekonomi per wilayah Solo Raya</caption>
-      <thead>
-        <tr>
-          <th scope="col">Wilayah</th>
-          <th scope="col" class="text-right">Populasi (2023)</th>
-          <th scope="col" class="text-right">Pertumbuhan ekonomi 2025</th>
-          <th scope="col" class="text-right">UMK 2026</th>
-          <th scope="col">Catatan pasar</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="font-semibold text-ink-900">Kota Surakarta</td>
-          <td class="num text-right">±522 rb</td>
-          <td class="num text-right text-ok-600">5,63%</td>
-          <td class="num text-right">Rp2.570.000</td>
-          <td>Inti ekonomi; pusat kuliner, fashion &amp; edukasi; kepadatan tertinggi</td>
-        </tr>
-        <tr>
-          <td class="font-semibold text-ink-900">Kab. Klaten</td>
-          <td class="num text-right">±1.303 rb</td>
-          <td class="num text-right">4,06%</td>
-          <td class="num text-right">Rp2.538.691</td>
-          <td>Populasi terbesar; pasar massal dan wisata religi/heritage</td>
-        </tr>
-        <tr>
-          <td class="font-semibold text-ink-900">Kab. Boyolali</td>
-          <td class="num text-right">±1.100 rb</td>
-          <td class="num text-right">3,13%</td>
-          <td class="num text-right">Rp2.537.949</td>
-          <td>Susu &amp; agrikultur; berkembang ke agrowisata</td>
-        </tr>
-        <tr>
-          <td class="font-semibold text-ink-900">Kab. Wonogiri</td>
-          <td class="num text-right">±1.051 rb</td>
-          <td class="num text-right">5,67%</td>
-          <td class="num text-right">Rp2.335.126</td>
-          <td>UMK terendah; pasar value-for-money</td>
-        </tr>
-        <tr>
-          <td class="font-semibold text-ink-900">Kab. Sragen</td>
-          <td class="num text-right">±1.005 rb</td>
-          <td class="num text-right">5,09%</td>
-          <td class="num text-right">Rp2.337.700</td>
-          <td>Koridor timur; industri &amp; komuter harian ke Solo</td>
-        </tr>
-        <tr>
-          <td class="font-semibold text-ink-900">Kab. Karanganyar</td>
-          <td class="num text-right">±954 rb</td>
-          <td class="num text-right">5,11%</td>
-          <td class="num text-right">Rp2.592.154</td>
-          <td>UMK tertinggi; pariwisata Tawangmangu &amp; kemaritiman lereng</td>
-        </tr>
-        <tr>
-          <td class="font-semibold text-ink-900">Kab. Sukoharjo</td>
-          <td class="num text-right">±916 rb</td>
-          <td class="num text-right">5,13%</td>
-          <td class="num text-right">Rp2.500.000</td>
-          <td>208.725 UMKM terdaftar; produsen oleh-oleh &amp; jamu</td>
-        </tr>
-        <tr class="bg-ink-50 font-semibold">
-          <td class="text-ink-900">Solo Raya (total)</td>
-          <td class="num text-right text-ink-900">±6,84 jt</td>
-          <td class="num text-right text-ink-900">3,1-5,7% per wilayah</td>
-          <td class="num text-right text-ink-900">Rp2,33-2,59 jt</td>
-          <td>Kawasan metropolitan terpadat kedua di Jateng setelah Semarang</td>
-        </tr>
-      </tbody>
-    </table>
+    <!-- Growth & UMK matrix -->
+    <div class="card p-5 md:p-6">
+      <h3 class="font-bold text-ink-900 mb-4">Pertumbuhan ekonomi 2025 vs UMK 2026</h3>
+      <ul class="space-y-3.5">
+        <li class="flex items-start gap-3">
+          <span class="conf-dot conf-high mt-1.5"></span>
+          <span class="text-sm text-ink-700"><strong class="text-ink-900">Paling cepat: Wonogiri (+5,67%) &amp; Surakarta (+5,63%)</strong> - pasar value &amp; premium tumbuh bersamaan.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="conf-dot conf-high mt-1.5"></span>
+          <span class="text-sm text-ink-700"><strong class="text-ink-900">UMK tertinggi Karanganyar (Rp2,59 jt)</strong>; Surakarta Rp2,57 jt - duet daya beli terkuat untuk premium.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="conf-dot conf-med mt-1.5"></span>
+          <span class="text-sm text-ink-700"><strong class="text-ink-900">Sensitif harga</strong>: Wonogiri &amp; Sragen (UMK terendah) - kuasai entry-level dulu.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="conf-dot conf-high mt-1.5"></span>
+          <span class="text-sm text-ink-700"><strong class="text-ink-900">Konsumsi rumah tangga</strong> = 50%+ PDRB; makan-minum tumbuh 10,6% (tercepat di Jateng, 2025).</span>
+        </li>
+      </ul>
+      <p class="source-line mt-4">BPS Jateng PDRB 2025; LKPJ Wali Kota Surakarta 2025; Kepgub 505/2025 (UMK 2026).</p>
+    </div>
   </div>
 
-  <p class="source-line mb-8">
-    <strong>Sumber:</strong> BPS: proyeksi penduduk 2023 (via publikasi media); BPS Jateng: pertumbuhan
-    PDRB 2025 (rilis Februari 2026); BPS Wonogiri: pertumbuhan PDRB 2025 5,67% (rilis via Espos.id,
-    Maret 2026); LKPJ Wali Kota Surakarta 2025 (pertumbuhan 5,63%, kemiskinan
-    7,69%, TPT 4,5%, Gini 0,398); Keputusan Gubernur Jateng No. 100.3.3.1/505 Tahun 2025 (UMK 2026).
-    Angka populasi per kabupaten adalah pembulatan proyeksi 2023 dan harus diverifikasi dengan publikasi
-    resmi BPS terkini.
-  </p>
-
-  <!-- Economy insight -->
-  <div class="grid md:grid-cols-3 gap-3 md:gap-4 mb-8">
+  <!-- Ambang harga & ketimpangan -->
+  <div class="grid md:grid-cols-2 gap-3 md:gap-4 mb-8">
     <div class="card card-hover p-5">
-      <p class="eyebrow mb-2">Konsumsi domestik</p>
-      <p class="text-sm leading-relaxed text-ink-700">
-        Konsumsi rumah tangga menyumbang <strong>50%+ PDRB Kota Surakarta</strong>, pasar ini digerakkan
-        belanja harian, bukan ekspor. Sektor akomodasi &amp; makan-minum tumbuh paling cepat di Jawa
-        Tengah (10,6% pada 2025).
-      </p>
-      <p class="source-line mt-3"><strong>Confidence:</strong> <span class="conf-dot conf-high"></span> Tinggi (BPS)</p>
-    </div>
-    <div class="card card-hover p-5">
-      <p class="eyebrow mb-2">Daya beli</p>
-      <p class="text-sm leading-relaxed text-ink-700">
-        Rentang UMK Rp2,33-2,59 juta/bulan menandai harga jual yang sensitif: produk di atas
-        <strong>±Rp100 ribu</strong> masuk kategori pertimbangan, kecuali ada nilai pengalaman atau
-        prestise yang jelas.
-      </p>
-      <p class="source-line mt-3"><strong>Confidence:</strong> <span class="conf-dot conf-med"></span> Sedang (derivasi dari data upah)</p>
+      <p class="eyebrow mb-2">Ambang harga</p>
+      <p class="kpi text-2xl md:text-3xl">±100 rb</p>
+      <p class="text-sm text-ink-700 mt-1">Di atas nilai ini masuk "kategori pertimbangan", kecuali ada pengalaman/prestige yang jelas.</p>
+      <p class="source-line mt-3"><span class="conf-dot conf-med"></span> Sedang (derivasi upah)</p>
     </div>
     <div class="card card-hover p-5">
       <p class="eyebrow mb-2">Ketimpangan</p>
-      <p class="text-sm leading-relaxed text-ink-700">
-        Gini Surakarta 0,398 (2025) dan 7,69% penduduk di bawah garis kemiskinan. Strategi harga harus
-        menyediakan <strong>segmen entry-level</strong>, bukan hanya kelas menengah.
-      </p>
-      <p class="source-line mt-3"><strong>Confidence:</strong> <span class="conf-dot conf-high"></span> Tinggi (BPS/LKPJ)</p>
+      <p class="kpi text-2xl md:text-3xl text-warn-600">0,398</p>
+      <p class="text-sm text-ink-700 mt-1">Gini Surakarta; 7,69% di bawah garis kemiskinan - wajib ada segmen entry-level.</p>
+      <p class="source-line mt-3"><span class="conf-dot conf-high"></span> Tinggi (BPS/LKPJ)</p>
     </div>
   </div>
 
   <div class="callout callout-warn">
     <h4>Implikasi untuk pelaku usaha</h4>
     <p>
-      Surakarta dan Karanganyar adalah pasar premium; Wonogiri &amp; Sragen paling sensitif harga. Strategi
-      distribusi sebaiknya membedakan tiga klaster: inti kota (Surakarta), penyangga ekonomi (Sukoharjo,
-      Karanganyar, Klaten, Boyolali), dan periphery (Sragen, Wonogiri).
+      Surakarta &amp; Karanganyar = premium; Wonogiri &amp; Sragen = sensitif harga. Tiga klaster
+      distribusi: inti kota (Surakarta), penyangga ekonomi (Sukoharjo, Karanganyar, Klaten, Boyolali),
+      periphery (Sragen, Wonogiri).
     </p>
   </div>
 
