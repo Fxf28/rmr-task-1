@@ -322,6 +322,20 @@ body {
     font-weight: 600;
   }
 
+  /* Footnote akurasi data (per section) */
+  .section-footnote {
+    margin-top: 1rem;
+    border-top: 1px dashed var(--color-ink-200);
+    padding-top: 0.625rem;
+    font-size: 0.6875rem;
+    line-height: 1.5;
+    color: var(--color-ink-400);
+  }
+  .section-footnote strong {
+    color: var(--color-ink-500);
+    font-weight: 600;
+  }
+
   /* Buttons */
   .btn {
     display: inline-flex;
